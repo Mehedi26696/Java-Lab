@@ -103,6 +103,8 @@ public class Solution{
         }
         catch(ArithmeticException e){
 
+            
+
         }
         catch(MyException1 e){
 

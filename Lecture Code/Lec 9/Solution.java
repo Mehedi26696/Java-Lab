@@ -8,7 +8,7 @@ class MyException extends Exception{
         des = s; 
     }
     public String toString(){
-        System.out.println("Exception nomal print  " + des);
+        System.out.println("Exception normal print  " + des);
         return "Exception here  " + des; 
     }
 }
@@ -19,7 +19,7 @@ class ExceptionHandling{
             int c = a/b;
             System.out.println("c " + c);
             //throw new ArithmeticException("Created my exception"); 
-            throw new MyException("Created my exception object"); 
+           // throw new MyException("Created my exception object"); 
         }
         
         catch(ArithmeticException e){
@@ -38,9 +38,9 @@ class ExceptionHandling{
             System.out.println("Runtime Exception " );
             e.printStackTrace();
         }
-        catch (MyException e){
-            e.printStackTrace();
-        }
+        // catch (MyException e){
+        //     e.printStackTrace();
+        // }
         catch (Exception e){
             e.printStackTrace();
         }
@@ -54,5 +54,6 @@ public class Solution{
     public static void main (String [] args){
         System.out.println("print"); 
         ExceptionHandling.createError(20, 10);
+        ExceptionHandling.createError(20, 0);
     }
 }
