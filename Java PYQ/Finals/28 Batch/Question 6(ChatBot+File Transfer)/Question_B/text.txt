@@ -1,0 +1,9 @@
+
+
+
+(b)Suppose, you have the following file on your server-side saved as "A.txt" and you need to make a copy of this file on the client side. Write a Java program based on 
+   socket programming to send the contents of a file from server to client. Find the file content below:
+   
+   The brown fox makes a jump
+   There is a beautiful movie called The Beautiful Mind
+   A person with a beautiful heart, made of iron.

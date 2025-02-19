@@ -1,0 +1,71 @@
+
+ 
+(a) Consider that you are working on a simple ChatBot project named SimpleBot. The functionalities [6] and features of SimpleBot are as follows:
+SimpleBot works with prompts.
+
+The prompts are considered within three categories Educational, Entertainment-centric, and Miscellaneous.
+
+Under the Educational category, it considers the prompts within three subcategories- Technical, General, and Basic.
+
+The Entertainment-centric category sub-divides it into two additional categories- Movie-Series and Book.
+
+Under the Miscellaneous category, it also considers one single sub-category named Random-Article.
+
+To process prompts for generating the outputs, the system has mainly three main machine learning architectures, RLUModel, 
+TransformerModel, and LSTMModel. All the sub-categories eventually use them as per their availability and the subscription 
+model the clients have bought. The model and subscription follow the policy given below:
+
+The performance order of the models is - TransformerModel> LSTMModel> RLUModel. There are three subscription models -
+
+o Basic (uses at most RLUModel)
+o Medium (uses at most LSTMModel)
+o Pro (Uses at most TransformerModel).
+
+During the processing, as per the subscription model, the highest available ML model is first searched to be used. However,
+if they are not available, the lower-powered ML model is searched to be used.
+
+Develop an object-oriented design and identify the class diagrams, their relationships, and a minimal set of attributes and methods for the above project. 
+Also, discuss the rationale in brief.
+
+
+(b)Suppose, you have the following file on your server-side saved as "A.txt" and you need to make a copy of this file on the client side. Write a Java program based on 
+   socket programming to send the contents of a file from server to client. Find the file content below:
+   
+   The brown fox makes a jump
+   There is a beautiful movie called The Beautiful Mind
+   A person with a beautiful heart, made of iron.
+
+
+(c)You are given the following program. Identify the problematic issues that might exist, and present your rationale.
+
+code:
+
+public interface InnerExampleCode {
+        static int x;
+        final int y;
+        void demo () {
+         System.out.println("demo");
+      }
+
+      public void addDemo ();
+
+}
+
+class Def extends InnerExampleCode{
+
+        void demo () {
+            X = 67;
+            System.out.println("demo function here " + x);
+        }
+
+       void newFunc() {
+         int z = x + y;
+       }
+}
+public class ExampleCode{
+
+      public static void main (String[] args) {
+           InnerExampleCode inExp = new Def(); 
+           inExp.newFunc();
+      }
+}

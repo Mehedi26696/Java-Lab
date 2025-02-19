@@ -1,0 +1,25 @@
+2. Consider that you are working on an Al-based Football video game project. Some features of the game are as follows:
+
+There are four types of players in this football game - Striker, Defender, Mid-Fielder, and Goal-Keeper. Each type of player is identified through their unique capability.
+A team consists of 11 players.
+
+In a particular moment of a running game, the gamer takes control of a player. Then based on the game scenario, other players are assisted by AI to help the gamer.
+For example, when a gamer is trying to execute an attack against the opponent team,the strikers are notified to sync with him/her so that he/she can easily switch 
+the controlling player to pick the most suitable one. Similarly, during an opponent's attack, the defenders and goalkeeper from the same team are notified.
+During a game, the gamer can assign different roles to the players. For example, he/she can assign the same player as a striker and midfielder. 
+Similarly, the same player can have the responsibility of a striker and defender. But only, the goalkeeper can have up to one role.
+In your work, you need to implement the features as the requirements given.
+
+(a) Design and draw a diagram to implement the components of the game. Note that you have to choose a minimal set of attributes and methods in this regard 
+with an explanation of your underlying rationale.
+
+(b) Design a module based on the suitability of design patterns as per your opinion to implement the scenaric when some players have multiple roles.
+    Note that you have to choose a minimal set of relevant attributes and methods in this regard with an explanation of your underlying rationale. 
+    Additionally, you need to handle the exception if the gamer tries to give an additional role to the goalkeeper (e.g., Goalkeeper has been asked to be a striker).
+
+(c) Suppose, the game has a player creation feature to create custom players. The player can be created from the 4 types mentioned above based on/  customizing the following features Kick Strength, Dribbling Power, Stamina, Goal Save Capability,
+ Design a module following the idea of design patterns to create custom players. Draw the class diagram, underlying rationale, and a minimal set of relevant attributes and functions.
+
+
+ 
+ 

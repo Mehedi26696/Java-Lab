@@ -1,0 +1,14 @@
+
+
+
+(d) Describe the scope of public, private, protected, and default access modifiers.
+
+Answer:
+
+- Public: The public access modifier allows the member to be accessible from any other class.
+
+- Private: The private access modifier restricts the member to be accessible only within its own class.
+
+- Protected: The protected access modifier allows the member to be accessible within its own package and by subclasses.
+
+- Default: The default access modifier (no modifier) allows the member to be accessible only within its own package.

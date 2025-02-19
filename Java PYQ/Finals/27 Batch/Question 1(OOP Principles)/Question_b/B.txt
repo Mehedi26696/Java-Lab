@@ -1,0 +1,19 @@
+
+(b) Discuss how each of the following terms and concepts applies to the notion of a watch: 
+    object, attributes, behavior, class, inheritance, encapsulation.
+
+
+    Object: A watch can be considered an object in programming. It is an instance of a class that represents a real-world entity.
+
+    Attributes: Attributes of a watch object might include properties such as brand, color, material, and type (analog or digital).
+
+    Behavior: The behavior of a watch object includes actions it can perform, such as displaying time, setting an alarm, or starting a stopwatch.
+
+    Class: A class is a blueprint for creating objects. The Watch class would define the attributes and behaviors that all watch objects share.
+
+    Inheritance: Inheritance allows a new class to inherit properties and methods from an existing class. For example, a SmartWatch class could inherit 
+                 from the Watch class and add additional features like heart rate monitoring.
+
+    Encapsulation: Encapsulation is the concept of bundling data and methods that operate on the data within one unit, such as a class, and restricting 
+                   access to some of the object's components. In a watch object, the internal workings (like the mechanism to keep time) are hidden from the outside, 
+                   exposing only the necessary interfaces (like setting the time).

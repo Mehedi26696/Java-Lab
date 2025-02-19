@@ -1,0 +1,77 @@
+
+
+(a) You are given a string S. You need to implement the following functions by incorporating them within a class to manipulate S based on Java-supported syntax.
+    i.void putFront(char a): Will put a character a at the beginning of S
+    ii.void putBehind(char a): Will put a character a at the end of the S 
+    ii.void pop(int idx): Will remove the character from the Idx position of S
+
+
+
+(b) You are given the following multi-threaded program. You need to extract the values from the array given Arr in the object of the class Data and store them locally
+      within the classes' array SArr that implements the thread. Each value should be extracted only once from Arr. You can assume that all the values of Arr will be a 
+      positive integer number. For any index, the value -1 means that the value of that index has already been extracted.
+
+      Identify any concurrency-related issues and explain your rationale. In addition, mention any synchronization measure you would consider here.
+      Modify the program in such regard and analyze the improvement.
+
+Code:
+
+class Data {
+
+  int Arr[];
+
+  public Data() {
+    Arr = new int[20];
+    for (int i = 0; i < 20; i++) {
+
+      Arr[i] = i*2 + 1;
+    }
+  }
+}
+
+class Processor implements Runnable {
+
+  Data d;
+  int SArr[];
+  Thread t;
+
+  public Processor(Data d, String threadName) {
+    SArr = new int[20];
+    this.d = d;
+    t = new Thread(this, threadName);
+  }
+
+  public void run() {
+    int j = -1;
+    for (int i = 0; i < 20; i++) {
+
+      if (this.d.Arr[i] != -1) {
+        j++;
+        SArr[j] = this.d.Arr[i];
+        System.out.println("j = " + SArr[j] + " " + i + " " + d.Arr[i] + " " + Thread.currentThread());
+        this.d.Arr[i] = -1;
+      }
+    }
+  }
+}
+
+public class ConcurThread {
+
+  public static void main(String[] args) { 
+        Data d = new Data();
+        Processor pl = new Processor (d, "p1"); 
+        Processor p2 = new Processor (d, "p2"); 
+        pl.t.start();
+        p2.t.start();
+       try {
+         pl.t.join();
+         p2.t.join();
+       } catch (Exception e) {
+         e.printStackTrace();
+       }
+   }
+}
+
+
+
+(c). Explain the concept of deadlock using an example

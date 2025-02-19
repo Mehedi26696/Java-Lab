@@ -1,0 +1,26 @@
+
+
+(a) Discuss two ways through which Java achieves the OOP feature of polymorphism.
+
+(b) Explain the two main benefits of nested classes. Give an example code that demonstrates these benefits.
+
+(c) Mention three cases where the final keyword is used.
+
+(d) From the code snippet given below, write down the relationships (for example, inheritance, composition) among the classes/interfaces FileReader,
+    TextFileReader, CSVFileReader, and ExcelFileReader. Briefly explain your reasoning.
+
+    code:
+       class FileReaderFactory {
+    public FileReader createReader(String fileType) {
+
+        if (fileType.equals("text")) {
+            return new TextFileReader();
+        } else if (fileType.equals("csv")) {
+            return new CSVFileReader();
+        } else if (fileType.equals("excel")) {
+            return new ExcelFileReader();
+        } else {
+            throw new IllegalArgumentException("Unsupported file type");
+        }
+    }
+}

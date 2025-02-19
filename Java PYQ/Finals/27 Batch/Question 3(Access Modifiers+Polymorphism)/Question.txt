@@ -1,0 +1,16 @@
+ 
+(a) Explain the different types of polymorphism that are available in Java with an example.
+
+(b) Suppose a subclass inherits a method implementation from a superclass, and implements a Java interface (that's the interface keyword) that 
+    contains a method with the same name and prototype.
+
+        I. Will Java compile the result? What if the method declaration in the interface has a different return type?
+        II.What if the method declaration in the interface has the same return type, but a signature with a different parameter type?
+
+
+(c) Consider the following statement -
+      public static void main(String args[])
+
+    Describe why the main method should always be public and static.
+
+(d) Describe the scope of public, private, protected, and default access modifiers.

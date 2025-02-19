@@ -1,0 +1,6 @@
+
+Problem:
+
+1. Class D is default so it can't accessible from another pakage class
+
+2. Can't access x from p2 because x is default, a from p2 because a is protected, z from p2 because z is private

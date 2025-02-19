@@ -1,0 +1,61 @@
+
+
+(a) "Suppose, you are implementing a database for storing the information of some students. You will be given an array of students. Each student has a unique name 
+     and three additional features - age, nationality, and address. After storing the information, you will be asked with a query given by a string X to fetch the 
+     data of the student named X. If no such entry exists, you need to create a custom exception denoting the issue."
+     Write a Java program for the above scenario. Not that you can only use basic Arrays and can't use any sophisticated collection framework (e.g., HashMap, ArrayList, Set, etc..).
+
+(b) Consider the two packages p1 and p2 with the corresponding source files. Identify any problematic issues that would hinder the successful compilation and running.
+    State the rationale behind your answer.
+
+code:
+
+package p1;
+
+import p2.B;
+import p2.D;
+
+class C extends B{
+
+   public void temp() {
+          x = 11;
+          y = 12;
+          a = 13; 
+     }
+}
+
+
+public class A{
+
+      public static void main (String[] args) {
+
+              B b = new B();
+              b.a = 10;
+              b.x = 20;
+              b.y = 30;
+              b.z = 70;
+      }
+}
+
+Under Package p1, A.java
+
+
+code:
+
+package p2;
+
+class D {
+
+}
+
+public class B {
+     int x;
+     public int y;
+     private int z;
+     protected int a;
+}
+
+Under Package p2, B.java
+
+(c) Write a Java program to create a simple chat application where two persons can simultaneously
+    send and receive messages.

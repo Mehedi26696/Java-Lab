@@ -1,0 +1,9 @@
+
+(a) What is the usefulness of the Serializable interface in Java I/O? Explain with an example,
+
+(b) Consider some student objects have been written in a binary file named StudentInformation.dat where each student object has three attributes 
+    named id(int), name(String), and marks(double). Write a Java program to perform the following,
+
+      (i) Read these student objects
+      (ii) Determine which students have passed the exam (assume the pass mark is 50) 
+      (iii) Print the id, and nume of the students who have passed

@@ -1,0 +1,17 @@
+
+
+
+(c) Consider the following statement -
+      public static void main(String args[])
+
+    Describe why the main method should always be public and static.
+
+Answer:
+The main method should always be public and static for the following reasons:
+
+1. public: The main method must be public so that it is accessible to the Java runtime system. If it is not public, 
+               the Java runtime system will not be able to access it, and the program will not run.
+
+2. static: The main method must be static because it needs to be called by the Java runtime system without creating 
+            an instance of the class. Since the main method is the entry point of the program, it must be called without any object.
+             Making it static allows the Java runtime to call it directly using the class name.

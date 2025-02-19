@@ -1,0 +1,12 @@
+
+ 
+(a) What is constructor overloading? Give an example. What happens when a return type, even void, is specified for a constructor?
+
+(b) Discuss how each of the following terms and concepts applies to the notion of a watch: 
+    object, attributes, behavior, class, inheritance, encapsulation.
+ 
+(c) Design a class named student that has two private data - student id and score. The class should contain a parameterized constructor to 
+    initialize its data members and one method to display the information. Now, write a Java program that will use an array of the Student 
+    objects to represent information about n number of students. Your program should take input from the keyboard and display the students' information.
+
+    

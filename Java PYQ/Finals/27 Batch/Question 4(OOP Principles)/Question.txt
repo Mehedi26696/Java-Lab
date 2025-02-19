@@ -1,0 +1,20 @@
+ 
+(a)Consider the following facts:
+
+          Humans breath, eat, move(walk), talk 
+          Birds breath, eat, move(fly), chirp 
+          Fishes breath, eat, move(swim)
+          Dogs breath, eat, move(run), bark
+   Design the class/interface hierarchy and then write Java code that reflects the OOP principles.
+
+   Hint: You may create separate classes/interfaces for humans, birds, fishes, dogs, and possibly some more as per your needs. The actions of an animal may be represented by a 
+   single-statement method, for example, to implement human's breathing action, you may write the statement:
+
+    System.out.println("Breathing...");
+    or
+    System.out.println("Human is breathing...") ;
+
+In your code, you should practice OOP principles as much as possible.
+
+
+(b) Explain the concept of the "super" keyword in Java. How is it used in method overriding?
