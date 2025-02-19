@@ -1,0 +1,33 @@
+
+
+(a) 
+
+  I.Explain the purpose of packages in java and how they can be used to organize and manage large-scale Java projects.
+
+  II.Provide an example of a package hierarchy that you might use for a project involving user authentication, product management, order processing, and customer support. 
+     You need to write the package names and their member classes. Suppose the available classes are:
+
+
+        ProductManager.java,
+        User.java,
+        Inventory.java,
+        Order.java,
+        PaymentProcessor.java,
+        AuthenticationManager.java,
+        Product.java,
+        Customer.java,
+        OrderManager.java and
+        SupportTicket.java
+
+
+(b)
+   
+   I.What are the main benefits of using multithreading in Java?
+
+   II.Explain how the following code snippet creates a new thread and starts it:
+
+    Thread thread = new Thread (() -> {
+        // some code to be executed in a separate thread
+      });
+      
+    thread.start();

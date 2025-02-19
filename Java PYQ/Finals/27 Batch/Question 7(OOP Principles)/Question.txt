@@ -1,0 +1,36 @@
+
+
+
+(a) Generate the output of the following Java program and state the reason for your result:
+
+
+    public class A{
+         A() {
+            System.out.println("Constructor of A");
+         }
+
+        void print() {
+            System.out.println("Inside print method of A");
+        }
+    }
+
+public class B extends A{
+
+    B() {
+        System.out.println("Constructor of B");
+    }
+    void print() {
+        System.out.println("Inside print method of B");
+    }
+    public static void main(String[] args) { 
+        A a = new B();
+
+       a.print();
+    }
+}
+
+(b) Create a Shape interface with two methods, draw and area(). Implement two classes (Rectangle and Circle) those implement the Shape class. 
+    The first method exhibits a print statement to show a certain figure is drawn, and the other method calculates the area. Each class (Rectangle and Circle) 
+    should take enough input to calculate the area for a certain shape. Your task is to design the classes based on the given scenario.
+
+(c) What is the difference between method overriding and method overloading? Explain with examples.

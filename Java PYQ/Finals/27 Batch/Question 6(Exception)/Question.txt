@@ -1,0 +1,17 @@
+
+ 
+(a) What is the difference between checked exceptions (e.g., IOException) and unchecked exceptions (e.g., ArithmeticException) in Java, and how are they handled differently in the code?
+
+
+(b) Suppose you are building a weather application that retrieves weather data from different APIs. The APIs can return different exceptions, such as 
+    NetworkException , DataFormatException and UnauthorizedException where
+
+    DataFormatException and UnauthorizedException, inherit NetworkException.
+    
+    In addition to these exceptions, other exceptions may be generated as well. Write a try-catch block to handle each of these exceptions separately and 
+    provide appropriate error messages. Briefly explain your code.
+
+
+
+ 
+(c) Explain the difference between the "throw" and "throws" keywords in Java exception handling with example codes.

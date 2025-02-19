@@ -1,0 +1,36 @@
+
+
+(a) Write down the differences between the four access modes of Java: default case.
+    private, protected, and public. (You do not need to give examples, just answer in text.)
+
+(b) Mention three cases where the final keyword is used and why.
+
+(c) When is a static block of code executed? Write down the output of the following code segment:
+
+
+class A {
+     static int a;
+     static int b;
+     static {
+       System.out.println("a: " + a + ", b: " + b);
+     }
+     {
+
+        b++;
+        System.out.println("b in block: " + b);
+     }
+
+     public A(){
+        
+        System.out.println("constructor");
+     }
+ 
+    public static void main(String[] args) {
+
+        System.out.println("Some text.");
+        A ob = new A();
+        A ob2 = new A();
+
+    }
+
+}

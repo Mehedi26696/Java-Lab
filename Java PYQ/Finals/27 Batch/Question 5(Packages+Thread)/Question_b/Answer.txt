@@ -1,0 +1,35 @@
+
+
+(b)
+   
+   I.What are the main benefits of using multithreading in Java?
+
+   II.Explain how the following code snippet creates a new thread and starts it:
+
+    Thread thread = new Thread (() -> {
+        // some code to be executed in a separate thread
+      });
+      
+    thread.start();
+
+Answer:
+
+I. The main benefits of using multithreading in Java are:
+    1. Improved performance: Multithreading can make better use of CPU resources by running multiple threads concurrently.
+    2. Enhanced responsiveness: Multithreading allows a program to remain responsive to user input while performing other tasks in the background.
+    3. Simplified modeling: Multithreading can simplify the modeling of real-world systems that involve multiple simultaneous activities.
+    4. Resource sharing: Threads within the same process can share resources such as memory, which can lead to more efficient use of resources.
+    5. Better system utilization: Multithreading can help in utilizing the system resources more effectively, especially in multi-core processors.
+
+II. The code snippet creates a new thread and starts it as follows:
+    1. `Thread thread = new Thread(() -> { /* some code to be executed in a separate thread */ });`:
+
+        - This line creates a new `Thread` object. The constructor of the `Thread` class takes a `Runnable` object as an argument. 
+          In this case, a lambda expression `() -> { /* some code to be executed in a separate thread */ }` is used to create an instance of `Runnable`.
+
+        - The lambda expression defines the `run` method of the `Runnable` interface, which contains the code that will be executed in the new thread.
+
+    2. `thread.start();`:
+        - This line starts the execution of the new thread. When the `start` method is called, the Java Virtual Machine (JVM) calls the `run` method of the `Runnable` 
+           object in a new thread of execution.
+        - The code inside the `run` method will be executed concurrently with the main thread.
