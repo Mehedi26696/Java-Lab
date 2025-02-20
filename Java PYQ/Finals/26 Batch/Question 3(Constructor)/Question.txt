@@ -4,55 +4,58 @@
     You should not use more classes than A, B, C and Demo.
 
 
-    class C{
 
-        int a, b, c;
+class C {
 
-        C(int a, int b, int c) {
+    int a, b, c;
 
-        this.a=a; 
-        this.b-b; 
-        this.c=c;
-       }
+    C(int a, int b, int c) {
+
+    this.a=a; 
+    this.b=b; 
+    this.c=c;
    }
-
-   class B {
-
-       int a, b, c, d, e;
-       B(int a, int b, int c, int d, int e) {
-
-       this.a=a; 
-       this.b-b; 
-       this.c=c; 
-       this.d= d; 
-       this.e=e;
-       }
-    }
-
-    class A {
-       
-       int a, b, c, d, e, f;
-       A(int a, int b, int c, int d, int e, int f) {
-        
-        
-         this.a=a; 
-         this.b-b; 
-         this.c-c;
-         this.d= d; 
-         this.e=e; 
-         this.f=f;
-       }
 }
 
+class B {
+
+    int a, b, c, d, e;
+
+   B(int a, int b, int c, int d, int e) {
+
+   this.a=a; 
+   this.b=b; 
+   this.c=c; 
+   this.d=d; 
+   this.e=e;
+   }
+}
+
+class A {
+
+    int a, b, c, d, e, f;
+
+   A(int a, int b, int c, int d, int e, int f) {
+    
+    
+     this.a=a; 
+     this.b=b; 
+     this.c=c;
+     this.d= d; 
+     this.e=e; 
+     this.f=f;
+   }
+}
 
 class Demo {
     public static void main(String[] args) {
 
-     A a = new A(3, 4, 5, 6, 7, 8);
-     B b = new B (2, 1, 2, 3, 4);
-     C C = new C(4, 5, 2);
+        A a = new A(3, 4, 5, 6, 7, 8);
+        B b = new B(2, 1, 2, 3, 4);
+        C C = new C(4, 5, 2);
     }
 }
+
 
 
  

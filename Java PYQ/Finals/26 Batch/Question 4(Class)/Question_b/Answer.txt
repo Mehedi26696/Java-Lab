@@ -1,0 +1,17 @@
+
+
+(b) Explain the benefits of abstract classes to represent mixed-type components of an object. (For example, a document file like .docx or .odt file is 
+    an object with mixed- type components such as texts, images, lists, etc.)
+
+Answer:
+
+Abstract classes provide a way to define a common interface for a group of related classes while allowing for some implementation details to be shared. 
+This is particularly useful for representing mixed-type components of an object, such as a document file with texts, images, lists, etc. The benefits include:
+
+1. Code Reusability: Abstract classes allow you to define methods that can be shared by multiple subclasses, reducing code duplication.
+2. Polymorphism: They enable polymorphic behavior, allowing you to treat different types of components uniformly through a common interface.
+3. Encapsulation: Abstract classes can encapsulate common state and behavior, making the code easier to manage and understand.
+4. Extensibility: New types of components can be added with minimal changes to the existing codebase by simply extending the abstract class.
+5. Design Flexibility: They provide a flexible design that can evolve over time, accommodating new requirements and changes in the system.
+
+Overall, abstract classes help in creating a robust and maintainable code structure for complex objects with mixed-type components.

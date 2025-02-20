@@ -1,0 +1,18 @@
+
+
+(a) What are the two ways in Java a thread can be created? Why does Java offer these two ways instead of one only?
+
+Answer:
+
+In Java, a thread can be created in two ways:
+
+1. By extending the `Thread` class:
+    - A class can extend the `Thread` class and override its `run` method. This approach is simple and straightforward but has a limitation that 
+      the class cannot extend any other class because Java does not support multiple inheritance.
+
+2. By implementing the `Runnable` interface:
+    - A class can implement the `Runnable` interface and provide the implementation for the `run` method. This approach is more flexible as 
+      the class can still extend another class and implement multiple interfaces.
+
+Java offers these two ways to provide flexibility in thread creation. By allowing a class to implement `Runnable`, it enables the class to inherit from another class, 
+promoting better design and code reuse. Extending `Thread` is useful for quick and simple thread creation when no other inheritance is needed.

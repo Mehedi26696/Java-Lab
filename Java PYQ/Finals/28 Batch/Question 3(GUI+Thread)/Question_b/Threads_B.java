@@ -1,87 +1,114 @@
-//(b) To make the computation faster, the thread-based program can be a help. Write a Java program to find Cusing two threads.
+//(b) To make the computation faster, the thread-based program can be a help. Write a Java program to find C using two threads.
+
+// C  = AXB here A and B are two matrix
 
 import java.util.Scanner;
-
-class FactorialThread extends Thread {
-    private int number;
-    private long result;
-
-    public FactorialThread(int number) {
-        this.number = number;
+ 
+class MatrixMultiplication extends Thread
+{
+    int rowStart, rowEnd;
+    int[][] A, B, C;
+ 
+    public MatrixMultiplication(int rowStart, int rowEnd, int[][] A, int[][] B, int[][] C)
+    {
+        this.rowStart = rowStart;
+        this.rowEnd = rowEnd;
+        this.A = A;
+        this.B = B;
+        this.C = C;
     }
+    
+    public void run()
+    {   
 
-    @Override
-    public void run() {
-        result = factorial(number);
-    }
-
-    public long getResult() {
-        return result;
-    }
-
-    private long factorial(int n) {
-        long fact = 1;
-        for (int i = 1; i <= n; i++) {
-            fact *= i;
+        for (int i = rowStart; i < rowEnd; i++)
+        {
+            for (int j = 0; j < C[0].length; j++)
+            {
+                C[i][j] = 0;
+                for (int k = 0; k < A[0].length; k++)
+                {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+            }
         }
-        return fact;
     }
 }
 
-public class Threads_B {
 
-    public static void main(String[] args) {
+public class Threads_B
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows and columns of matrix A: ");
+        int rowsA = sc.nextInt();
+        int colsA = sc.nextInt();
+        System.out.println("Enter the number of rows and columns of matrix B: ");
+        int rowsB = sc.nextInt();
+        int colsB = sc.nextInt();
+        
+        if (colsA != rowsB)
+        {
+            System.out.println("Matrix multiplication is not possible.");
+            return;
+        }
+        
+        int[][] A = new int[rowsA][colsA];
+        int[][] B = new int[rowsB][colsB];
+        int[][] C = new int[rowsA][colsB];
+        
+        System.out.println("Enter the elements of matrix A: ");
+        for (int i = 0; i < rowsA; i++)
+        {
+            for (int j = 0; j < colsA; j++)
+            {
+                A[i][j] = sc.nextInt();
+            }
+        }
+        
+        System.out.println("Enter the elements of matrix B: ");
+        for (int i = 0; i < rowsB; i++)
+        {
+            for (int j = 0; j < colsB; j++)
+            {
+                B[i][j] = sc.nextInt();
+            }
+        }
+        
+        
+        int rows = A.length;
+        int cols = B[0].length;
 
-        // Get input from user
+        
+        MatrixMultiplication t1 = new MatrixMultiplication(0, rows / 2, A, B, C);
 
-        System.out.print("Enter the value of n: ");
-        int n = sc.nextInt();
+        MatrixMultiplication t2 = new MatrixMultiplication(rows / 2, rows, A, B, C);
 
-        System.out.print("Enter the value of k: ");
-        int k = sc.nextInt();
+        t1.start();
+        t2.start();
 
-        // Create threads for factorial calculations
-        FactorialThread factN = new FactorialThread(n);
-        FactorialThread factK = new FactorialThread(k);
-        FactorialThread factNK = new FactorialThread(n - k);
-
-        // Start the threads
-        factN.start();
-        factK.start();
-        factNK.start();
-
-        // Wait for all threads to finish
-        try {
-            factN.join();
-            factK.join();
-            factNK.join();
-        } catch (InterruptedException e) {
+        try
+        {
+            t1.join();
+            t2.join();
+        }
+        catch (InterruptedException e)
+        {
             e.printStackTrace();
+
         }
 
-        // Get results from threads 
-        long factNResult = factN.getResult();
-        long factKResult = factK.getResult();
-        long factNKResult = factNK.getResult();
+        System.out.println("Product of matrices A and B is: ");
 
-        // Calculate C(n, k) using the formula: C(n, k) = n! / (k! * (n - k)!)
-        long combination = factNResult / (factKResult * factNKResult);
-
-        // Output the result
-        System.out.println("C(" + n + ", " + k + ") = " + combination);
-
-        sc.close();
-
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
-
-// Explanation:
-// This program finds the combination C(n, k) using two threads. The FactorialThread class is a subclass of Thread that calculates the factorial of a given number.
-// In the main class, we create three FactorialThread objects for calculating the factorials of n, k, and n-k.
-// We start the threads and wait for them to finish using the join() method.
-// After the threads have finished, we get the results from each thread and calculate the combination C(n, k) using the formula: C(n, k) = n! / (k! * (n - k)!).
-// Finally, we output the result to the console.
-
-// Here, we use threads to calculate the factorials of n, k, and n-k simultaneously, which can make the computation faster compared to a single-threaded approach.

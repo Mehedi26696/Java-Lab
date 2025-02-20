@@ -1,0 +1,34 @@
+
+(III) Someone wrote the following code snippet: 
+   
+   ArrayList Ll new ArrayList(); 
+   LinkedList L2 = new LinkedList(); 
+   if (user_input == 1) {
+
+    L1.add(45);
+    if (L1.get (0) == 45)
+    
+    System.out.println("45 found.");
+
+   }
+
+   else if (user_input == 2) {
+
+    L2.add(45);
+    if (L2.get (0) == 45)
+    System.out.println("45 found.") ;
+
+   }
+
+  As you have probably guessed already, the code does not look like it was written by a professional OOP programmer. 
+  Rewrite the code leveraging the class hierarchy so that the code size is minimized.
+  
+
+  Answer:
+
+  List<Integer> list = (user_input == 1) ? new ArrayList<>() : new LinkedList<>();
+        
+        list.add(45);
+        if (list.get(0) == 45) {
+            System.out.println("45 found.");
+        }

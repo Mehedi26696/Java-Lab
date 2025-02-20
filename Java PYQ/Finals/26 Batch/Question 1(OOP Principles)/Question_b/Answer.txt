@@ -1,0 +1,18 @@
+
+
+(b) Briefly explain the following concepts of Object-Oriented Programming (OOP): abstraction. encapsulation, inheritance, and polymorphism.
+
+
+Answer:
+
+Abstraction: Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of an object. 
+             It helps in reducing programming complexity and effort.
+
+Encapsulation: Encapsulation is the technique of bundling the data (variables) and methods (functions) that operate on the data into a single unit or class. 
+               It restricts direct access to some of the object's components, which can prevent the accidental modification of data.
+
+Inheritance: Inheritance is the mechanism by which one class (child class) can inherit the properties and methods of another class (parent class). 
+             It promotes code reusability and establishes a natural hierarchy between classes.
+
+Polymorphism: Polymorphism is the ability of different objects to respond to the same method call in different ways. 
+              It allows one interface to be used for a general class of actions, with the specific action determined by the exact nature of the situation.

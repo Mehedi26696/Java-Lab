@@ -1,0 +1,83 @@
+
+
+(a) The following is the class hierarchy of Java’s Collection framework. A dotted-lined box and solid-lined box indicate an interface and a concrete/abstract class,
+    respectively. An arrow from one box to another indicates that the former box is inherited/implemented by the latter box.
+
+    // collection image
+
+Collection
+├── List
+│   ├── AbstractList
+│   │   ├── AbstractSequentialList
+│   │   │   ├── LinkedList
+│   │   ├── ArrayList
+├── Queue
+│   ├── AbstractQueue
+│   │   ├── PriorityQueue
+│   ├── Deque
+│   │   ├── AbstractDeque
+├── Set
+│   ├── AbstractSet
+│   │   ├── HashSet
+│   │   │   ├── LinkedHashSet
+│   │   ├── EnumSet
+│   │   ├── TreeSet
+├── AbstractCollection
+
+
+
+    
+(I) You want to write a code that uses a HashSet data structure. What are the types of reference variables you can use?
+
+
+Answer:
+
+
+In Java, a HashSet can be referenced using multiple types based on the level of abstraction. According to the given collection hierarchy, the possible reference types are:
+
+1. HashSet<T> (Concrete class)
+    - Allows access to all HashSet-specific methods.
+    - Least flexible.
+
+     
+    HashSet<String> hashSet = new HashSet<>();
+    
+
+2. AbstractSet<T> (Abstract class)
+    - Provides some abstraction while retaining Set properties.
+ 
+
+    AbstractSet<String> abstractSet = new HashSet<>();
+ 
+
+3. Set<T> (Interface) (Best choice)
+    - Allows flexibility to switch to TreeSet, LinkedHashSet, etc.
+
+ 
+    Set<String> set = new HashSet<>();
+ 
+
+4. Collection<T> (Super interface)
+    - More generic but loses Set-specific behavior.
+
+ 
+    Collection<String> collection = new HashSet<>();
+ 
+
+5. AbstractCollection<T> (Abstract class)
+    - Even more abstract, rarely used directly.
+
+ 
+    AbstractCollection<String> abstractCollection = new HashSet<>();
+ 
+
+
+
+
+
+
+
+
+
+
+

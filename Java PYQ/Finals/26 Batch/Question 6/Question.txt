@@ -6,9 +6,9 @@
 
     
     (I) You want to write a code that uses a HashSet data structure. What are the types of reference variables you can use?
+
     (II) Is the following code valid? Why or why not?
 
- 
 
    List L = new Collection();
    L.add(56);
@@ -17,9 +17,9 @@
  
    (III) Someone wrote the following code snippet: 
    
-   ArrayList Ll new ArrayList(); 
+   ArrayList Ll = new ArrayList(); 
    LinkedList L2 = new LinkedList(); 
-   if (user input 1) {
+   if (user_input == 1) {
 
     L1.add(45);
     if (L1.get (0) == 45)
@@ -28,7 +28,7 @@
 
    }
 
-   else if (user input 2) {
+   else if (user_input == 2) {
 
     L2.add(45);
     if (L2.get (0) == 45)
@@ -36,7 +36,7 @@
 
    }
 
-  As you have probably guessed already, the code does not look like it was written by a professional OO programmer. 
+  As you have probably guessed already, the code does not look like it was written by a professional OOP programmer. 
   Rewrite the code leveraging the class hierarchy so that the code size is minimized.
 
   (b) Suppose your code may throw multiple exceptions E1, E2, E3 and E4 where E2 inherits El, and E3 and E4 inherits E2. 

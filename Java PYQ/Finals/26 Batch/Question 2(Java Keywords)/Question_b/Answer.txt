@@ -1,0 +1,11 @@
+
+
+(b) Mention three cases where the final keyword is used and why.
+
+Answer:
+
+1. Final variable: A variable declared with the final keyword cannot be reassigned. This is useful for defining constants.
+
+2. Final method: A method declared with the final keyword cannot be overridden by subclasses. This is used to prevent altering the method's behavior in derived classes.
+
+3. Final class: A class declared with the final keyword cannot be subclassed. This is used to prevent inheritance and ensure the class's implementation remains unchanged.

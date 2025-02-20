@@ -1,0 +1,11 @@
+
+
+(a) What do you understand about platform independence of a programming language? How does Java achieve this?
+
+
+Answe:
+
+Platform independence means that a program can run on any hardware or operating system without modification. 
+Java achieves platform independence through the use of the Java Virtual Machine (JVM). When Java code is compiled, 
+it is converted into bytecode, which is a platform-independent code. The JVM on each platform interprets this bytecode and executes it, 
+allowing the same Java program to run on any device that has a compatible JVM.

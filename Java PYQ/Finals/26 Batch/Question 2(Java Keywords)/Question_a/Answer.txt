@@ -1,0 +1,15 @@
+
+
+
+(a) Write down the differences between the four access modes of Java: default case.
+    private, protected, and public. (You do not need to give examples, just answer in text.)
+
+Answer:
+
+1. Default: When no access modifier is specified, it is considered default. The scope is limited to the package. It is not accessible from outside the package.
+
+2. Private: The scope of private access modifier is limited to the class only. It is not accessible from outside the class.
+
+3. Protected: The scope of protected access modifier is within the package and also accessible in subclasses outside the package.
+
+4. Public: The public access modifier has the widest scope. It is accessible from any other class in any package.
