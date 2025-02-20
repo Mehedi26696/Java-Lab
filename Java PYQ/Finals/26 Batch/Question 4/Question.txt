@@ -1,0 +1,10 @@
+ 
+(a) (I) Why does Java not allow two classes to be inherited by the same class? Explain the problem (with appropriate example code)
+     that may ensue if one class inherits two classes.
+
+    (II) Explain in the light of your example given in your answer to (I) as to how using the interface avoids the problem.
+
+
+(b) Explain the benefits of abstract classes to represent mixed-type components of an object. (For example, a document file like .docx or .odt file is 
+    an object with mixed- type components such as texts, images, lists, etc.)
+

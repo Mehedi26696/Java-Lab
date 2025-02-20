@@ -1,0 +1,39 @@
+
+
+ (a) Suppose Language is a class that is inherited by three classes namely Bangla, English, and Arabic. Bangla class is further inherited by two classes: Cholti and Shadhu.
+     For the sake of simplicity, assume that each of these classes has only a single constructor which takes a string as parameter and sets it to a local variable.
+
+
+     
+     Write a generic class named AnyLang that works on only types of objects of Language class or any of its subclasses. AnyLang has only a single data structure 
+     which is an array of the object. In its constructor, it takes an array of objects as a parameter and assigns it to the local array reference variable. 
+     In another class called Demo, in the main function, create two objects of AnyLang class with Language and Bangla classes, respectively.
+
+
+ (b) Given the following code snippet, explain what is going on inside btn.setOnAction (...) ; expression:
+
+
+    public void start (Stage primaryStage) {
+
+           primaryStage.setTitle("Hello World!");
+
+           Button btn = new Button();
+
+           btn.setText("Say 'Hello World'");
+
+           btn.setOnAction (new EventHandler<ActionEvent>() { 
+            @Override
+            public void handle (ActionEvent event) {
+
+                System.out.println("Hello World!");
+
+         }
+
+    });
+
+
+//other code...
+
+}
+
+  (c) Define the following two terms with an example of each: (i) anonymous class, and (ii) functional interface.

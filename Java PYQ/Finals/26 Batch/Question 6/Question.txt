@@ -1,0 +1,44 @@
+
+(a) The following is the class hierarchy of Java’s Collection framework. A dotted-lined box and solid-lined box indicate an interface and a concrete/abstract class,
+    respectively. An arrow from one box to another indicates that the former box is inherited/implemented by the latter box.
+
+    // collection image
+
+    
+    (I) You want to write a code that uses a HashSet data structure. What are the types of reference variables you can use?
+    (II) Is the following code valid? Why or why not?
+
+ 
+
+   List L = new Collection();
+   L.add(56);
+
+   System.out.println (L);
+ 
+   (III) Someone wrote the following code snippet: 
+   
+   ArrayList Ll new ArrayList(); 
+   LinkedList L2 = new LinkedList(); 
+   if (user input 1) {
+
+    L1.add(45);
+    if (L1.get (0) == 45)
+    
+    System.out.println("45 found.");
+
+   }
+
+   else if (user input 2) {
+
+    L2.add(45);
+    if (L2.get (0) == 45)
+    System.out.println("45 found.") ;
+
+   }
+
+  As you have probably guessed already, the code does not look like it was written by a professional OO programmer. 
+  Rewrite the code leveraging the class hierarchy so that the code size is minimized.
+
+  (b) Suppose your code may throw multiple exceptions E1, E2, E3 and E4 where E2 inherits El, and E3 and E4 inherits E2. 
+      Write the try-catch ladder to catch each of these exceptions for your code.
+
