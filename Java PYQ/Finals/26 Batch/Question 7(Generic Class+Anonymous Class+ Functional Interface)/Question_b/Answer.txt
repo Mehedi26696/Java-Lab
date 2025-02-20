@@ -1,0 +1,32 @@
+
+ (b) Given the following code snippet, explain what is going on inside btn.setOnAction (...) ; expression:
+
+public void start(Stage primaryStage) {
+
+    primaryStage.setTitle("Hello World!");
+
+    Button btn = new Button();
+
+    btn.setText("Say 'Hello World'");
+
+    btn.setOnAction(new EventHandler<ActionEvent>() {
+        @Override
+        public void handle(ActionEvent event) {
+
+            System.out.println("Hello World!");
+
+        }
+
+    });
+
+    // other code...
+
+}
+
+
+Answer: The code snippet is creating a button object and setting its text to "Say 'Hello World'". It then sets an action event handler on the button object.
+        The action event handler is an anonymous inner class that implements the EventHandler interface. The handle method of the EventHandler interface is overridden
+       to print "Hello World!" to the console when the button is clicked. This allows the button to perform an action when it is clicked.
+
+
+
