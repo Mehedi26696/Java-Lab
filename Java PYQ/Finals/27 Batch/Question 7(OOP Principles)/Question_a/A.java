@@ -29,4 +29,4 @@
 
 
 
-// This code will give an error beacause in same file we can't have two public classes. So, we have to remove public from class A and class B.
+// This code will give an error beacause in same file we can't have two public classes. So, we have to remove public from class A.
