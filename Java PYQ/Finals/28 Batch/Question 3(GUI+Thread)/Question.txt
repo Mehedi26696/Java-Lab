@@ -4,7 +4,7 @@
 
 (a) Write a Java program to find C. Note that you need to write the program to take input as well as to calculate and print the final result.
  
-(b) To make the computation faster, the thread-based program can be a help. Write a Java program to find Cusing two threads.
+(b) To make the computation faster, the thread-based program can be a help. Write a Java program to find C using two threads.
  
 (c) Explain the concept of Event Triggering with an example related to Java Graphical User Interface (GUI). Analyze the importance and explain how it brings additional improvement to an application.
  
