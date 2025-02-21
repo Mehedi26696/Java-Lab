@@ -8,8 +8,7 @@
         II.What if the method declaration in the interface has the same return type, but a signature with a different parameter type?
 
 Answer:
-I.  Java will compile the result if the method declaration in the interface has a different return type.
+I.  Java will compile the result.
     If the method declaration in the interface has a different return type, then Java will not compile the result.
 
-II. Java will compile the result if the method declaration in the interface has the same return type, but a signature with a different parameter type.
- 
+II. Java will not compile the result.
