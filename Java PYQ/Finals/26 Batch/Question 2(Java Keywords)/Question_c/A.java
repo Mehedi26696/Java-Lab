@@ -31,8 +31,8 @@ class A {
 }
 
 // Output:
-// Some text.
 // a: 0, b: 0
+// Some text.
 // b in block: 1
 // constructor
 // b in block: 2
