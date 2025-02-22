@@ -13,33 +13,31 @@ interface A {
     void display();
 }
 
-class B implements A {
-    public void display() {
-        System.out.println("B");
-    }
+
+interface B{
+
+    void display();
+     
 }
 
-class C implements A {
+class C implements A, B {
     public void display() {
-        System.out.println("C");
-    }
-}
-
-class D implements B, C {
-    public void display() {
-        System.out.println("D");
+        System.out.println("Hello");
     }
 }
 
 public class Answer_II {
     public static void main(String[] args) {
-        D ob = new D();
+        C ob = new C();
         ob.display();
     }
 }
 
-// In the above code, the interface A contains a method display(). The classes B and C implement the interface A and provide an implementation for the display() method.
-// The class D implements both the interfaces B and C. Since the display() method is defined in the interface A, the class D must provide an implementation for the display() method.
-// This ensures that there is no ambiguity in method resolution, and the diamond problem is avoided. The output of the above code will be:
-// D
-// This demonstrates how using interfaces can avoid the diamond problem by enforcing a single implementation for the methods defined in the interface.
+
+// In the above code, the class C implements both interfaces A and B. The display() method is defined in both interfaces.
+//        The class C must provide an implementation for the display() method. This ensures that there is no ambiguity in method resolution.
+//        Using interfaces in this way avoids the diamond problem and ensures that the code is unambiguous and easy to understand.
+//        The output of the above code will be:
+//        Hello
+//        This demonstrates how using interfaces can avoid the diamond problem and ensure that the code is clear and unambiguous.
+//        This is one of the key benefits of using interfaces in Java.
