@@ -25,16 +25,21 @@ class C implements A {
     }
 }
 
-class D implements A {
+class D implements B, C {
     public void display() {
         System.out.println("D");
     }
+}
 
+public class Answer_II {
     public static void main(String[] args) {
-        D obj = new D();
-        obj.display();
+        D ob = new D();
+        ob.display();
     }
 }
 
-// In the above code, the interface A defines the display() method. The classes B, C, and D implement the interface A and provide their own implementation for the display() method.
-// This ensures that there is no ambiguity in method resolution, and the code will compile and run without any issues.
+// In the above code, the interface A contains a method display(). The classes B and C implement the interface A and provide an implementation for the display() method.
+// The class D implements both the interfaces B and C. Since the display() method is defined in the interface A, the class D must provide an implementation for the display() method.
+// This ensures that there is no ambiguity in method resolution, and the diamond problem is avoided. The output of the above code will be:
+// D
+// This demonstrates how using interfaces can avoid the diamond problem by enforcing a single implementation for the methods defined in the interface.
